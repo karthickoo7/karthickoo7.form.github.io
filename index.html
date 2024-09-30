@@ -1,164 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <link rel="stylesheet" href="style.css">
+    <title>EnquiryForm</title>
     <style>
-        table {
-    border-collapse: collapse;
-    width: 100%;
-}
-
-th, td {
-    border: 1px solid black;
-    padding: 8px;
-    text-align: center;
-}
-th {
-    background-color: #f2f2f2;
-}
-h3,h2{
-    text-align: center;
-}
-.form{
-    text-align: left;
-}
-label{
-    font-weight: bold;
-}
-
-        input{
-            border: 2px solid white;
-            border-bottom: 1px solid black ;
+        div {
+            padding: 10px;
         }
-        .content { 
-            text-align: right;
+        
+        h1,
+        h2 {
+            text-align: center;
+            line-height: 0.5;
+        }
+        
+        table,
+        td,
+        th {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        
+        .space {
+            height: 75px;
+        }
+        
+        input {
+            box-sizing: border-box;
+            border-top: 3px;
+            border-left: 3px;
+            border-right: 3px;
         }
     </style>
-    
 </head>
+
 <body>
-    <h2>Besent technologies</h2>
-    <h3>Anna Nagar</h3>
-    <h3 class="form">Enquiry form</h3>
-
-    <form>
-        <div class="content">
-            <label>date</label>
-            <input type="date" firstname="date" lastname="date">
-        </div>
-
-        <div>
-        <label>Name:</label>
-        
-        <input type="text" firstname="Name">
-        </div><br>
-        <div>
-        <label>Mobile no:</label>
-        <input type="tel" firstname="mobile no"> 
-        <span>alternate no:</span>
-        <input type="tel" firstname="alternateno">
-        </div><br>
-        <div>
-        <label>current location:</label>
-        <input type="text" first name="location" id="location">
-        </div><br>
-        <div></div>
-        <label>course interested:</label>
-        <input type="text" firstname="course" id="course">
-    </div><br>
-    <div><br>
-        <label>batch preferred:</label>
-        <input type="checkbox" name="checkbox" id="checkbox">
-        <label>weekdays</label>
-        <input type="checkbox" name="checkbox" id="checkbox">
-        <label>weekend</label>
-
-    </div><br>
-    <div>
-        <label>professions</label>
-        <input type="checkbox" name="checkbox" id="checkbox">
-        <label>student</label>
-        <input type="checkbox" name="checkbox" id="checkbox">
-        <label>fresher</label>
-        <input type="checkbox" name="checkbox" id="checkbox">
-        <label>exp in it</label>
-        <input type="checkbox" name="checkbox" id="checkbox">
-        <label>Exp in Non It</label>
-        <input type="checkbox" name="checkbox" id="checkbox">
-        <label>career bank</label>
-    </div><br>
-
-    <table>
-<thead>
-        <th>
-        
-            student<br>
-            school/dipiloma/college
-        
-        </th>
-        <th>
-            fresher<br>
-             ug/pg-passedout
-        </th>
-        <th>
-            years of 
-            <br>exp in It(domain)
-        </th>
-        <th>
-            years of
-            <br> exp in non it
-        </th>
-        <th>how many years 
-            <br>carrer bank</th>
-    </thead>
-    
-
-    </table><br>
-
-   <div> 
-    <label>Exp in It or non it company name:</label>
-    <input type="text" firstname="text" id="text">
-   </div><br>
-   <div>
-    <label>Are you interested become a trainer?</label>
-    <input type="checkbox" name="checkbox" id="checkbox">
-    <label>yes</label>
-    <input type="checkbox" name="checkbox" id="checkbox">
-    <label>no</label>
-    </div><br>
-    <div>
-        <label>how did you hear about us:</label>
-        <input type="checkbox" name="checkbox" id="checkbox">
-        <label>google search</label>
-        <input type="checkbox" name="checkbox" id="checkbox">
-        <label>social media</label>
-        <input type="checkbox" name="checkbox" id="checkbox">
-        <label>reference</label>
-    </div><br>
-    <div>
-<label>contact us person from besent technologies:</label>
-<input type="text" name="text" id="text"><br>
-
-    </div>
-<h1>office use</h1>
-<div>
-<label>counsellor:</label>
-<input type="text" name="text" id="text">
-<label>fees:</label>
-<input type="text" name="text" id="text">
-</div><br>
-<div>
-    <label>status:</label>
-    <input type="text" name="text" id="text">
-    <label>comment:</label>
-    <input type="text" name="text" id="text">
-</div>
-
-
-    </form>
-
+    <h1>Besant Technologies</h1>
+    <h2>Anna Nagar</h3>
+        <h3>Enquiry Form
+            <span style="text-align:right;">
+                <label for="date">Date:</label>
+                <input type="date" name="date" id="date">
+            </span>
+        </h3>
+        <form>
+            <div>
+                <label for="name">Name: </label>
+                <input type="text" name="name" id="name">
+            </div>
+            <div>
+                <label for="mob">Mobile No: </label>
+                <input type="number" name="mob" id="mob">
+                <label for="altmob">Alternate No: </label>
+                <input type="number" name="altmob" id="altmob">
+            </div>
+            <div>
+                <label for="Email">Email ID: </label>
+                <input type="Email" name="Email" id="Email">
+            </div>
+            <div>
+                <label for="CurrentLocation">Current Location: </label>
+                <input type="text" name="CurrentLocation" id="CurrentLocation">
+            </div>
+            <div>
+                <label for="CourseIntrested">Course Intrested: </label>
+                <input type="text" name="CourseIntrested" id="CourseIntrested">
+            </div>
+            <div>
+                <label for="Batch">Batch Preferred:</label>
+                <input type="radio" name="Batch" id="Batch">Weekday
+                <input type="radio" name="Batch" id="Batch">Weekend
+            </div>
+            <div>
+                <label for="Profession">Profession:</label>
+                <input type="radio" id="profession" name="profession">
+                <label for="Profession">Student</label>
+                <input type="radio" id="profession" name="profession">
+                <label for="Profession">Fresher</label>
+                <input type="radio" id="profession" name="profession">
+                <label for="Profession">Exp in IT</label>
+                <input type="radio" id="profession" name="profession">
+                <label for="Profession">Exp in Non IT</label>
+                <input type="radio" id="profession" name="profession">
+                <label for="Profession">Career Break</label>
+            </div>
+            <div>
+                <table style="width: 100%;">
+                    <tr>
+                        <th>Student school/diploma/college</th>
+                        <th>Fresher UG/PG-Passed out</th>
+                        <th>Year of Exp in IT(Domain)</th>
+                        <th>Year of Exp in Non IT</th>
+                        <th>How Many Years Career Break</th>
+                    </tr>
+                    <tr>
+                        <td class="space"> </td>
+                        <td class="space"> </td>
+                        <td class="space"> </td>
+                        <td class="space"> </td>
+                        <td class="space"> </td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <label for="exp">Exp in IT or Non IT Company Name:</label>
+                <input type="text" name="exp" id="exp">
+            </div>
+            <div>
+                <label for="Trainer">Are you intrested As Become a Trainer ?</label>
+                <input type="radio" name="Trainer" id="Trainer">Yes
+                <input type="radio" name="Trainer" id="Trainer">No
+            </div>
+            <div>
+                <label for="Trainer">How Did You Hear about Us:</label>
+                <input type="radio" id="Trainer" name="Trainer">
+                <label for="Trainer">Google Search</label>
+                <input type="radio" id="Trainer " name="Trainer">
+                <label for="Trainer">Social Media</label>
+                <input type="radio" id="Trainer " name="Trainer">
+                <label for="Trainer">Reference</label>
+            </div>
+            <div>
+                <label for="CourseIntrested">Contact Person From Besant Technologies:</label>
+                <input type="text" name="CourseIntrested" id="CourseIntrested">
+            </div>
+            <div>
+                <h3>Office use</h3>
+                <label for="counsellor">Counsellor:</label>
+                <input type="text" id="counsellor" name="counsellor">
+                <label for="fees">Fees:</label>
+                <input type="text" id="fees" name="fees">
+            </div>
+            <div>
+                <label for="status">Status:</label>
+                <input type="text" id="status" name="status">
+                <label for="comment">Comment:</label>
+                <input type="text" id="comment" name="comment">
+            </div>
+        </form>
 </body>
-</html>
+
+</html><
